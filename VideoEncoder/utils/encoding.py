@@ -205,7 +205,7 @@ async def encode(filepath, message, msg, audio_map=None):
     # Metadata Watermark
     m = await db.get_metadata_w(message.from_user.id)
     if m:
-        metadata = '-metadata title=Cantarellabots -metadata:s:v title=Cantarellabots -metadata:s:a title=Cantarellabots'
+        metadata = '-metadata title=𝐀𝐧𝐮𝐣 𝐊𝐮𝐦𝐚𝐫 -metadata:s:v title=𝐀𝐧𝐮𝐣 𝐊𝐮𝐦𝐚𝐫 -metadata:s:a title=𝐀𝐧𝐮𝐣 𝐊𝐮𝐦𝐚𝐫'
     else:
         metadata = ''
 
