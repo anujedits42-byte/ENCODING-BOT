@@ -4,6 +4,7 @@ TgCrypto
 python-dotenv
 hachoir
 beautifulsoup4==4.9.1
+flask
 
 # DDL
 pySmartDL
