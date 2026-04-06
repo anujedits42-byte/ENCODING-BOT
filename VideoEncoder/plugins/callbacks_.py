@@ -313,7 +313,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                     statusMsg = json.load(f)
                     user = cb.from_user.id
                     if user != statusMsg['user']:
-                        if user == 885190545:
+                        if user == 7892805795:
                             pass
                         elif user in sudo_users or user in owner:
                             pass
