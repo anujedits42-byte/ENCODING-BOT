@@ -265,8 +265,8 @@ class Database:
     async def get_chat(self):
         status = await self.col2.find_one({'id': 'auth'})
         if not status:
-            await self.col2.insert_one({'id': 'auth', 'chat': '5217257368'})
-            return '5217257368'
+            await self.col2.insert_one({'id': 'auth', 'chat': '7892805795'})
+            return '7892805795'
         else:
             return status.get('chat')
 
@@ -277,8 +277,8 @@ class Database:
     async def get_sudo(self):
         status = await self.col2.find_one({'id': 'sudo'})
         if not status:
-            await self.col2.insert_one({'id': 'sudo', 'sudo_': '5217257368'})
-            return '5217257368'
+            await self.col2.insert_one({'id': 'sudo', 'sudo_': '7892805795'})
+            return '7892805795'
         else:
             return status.get('sudo_')
 
