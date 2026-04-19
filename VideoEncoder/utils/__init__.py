@@ -1,14 +1,13 @@
-
-
 from .lk21_patch import *   # ⭐ MUST BE FIRST LINE ⭐
 
+import os
 
 from pyrogram import Client, filters
+from pyrogram.errors import RPCError
 from .. import LOGGER
 from . import (direct_link_generator, display_progress, encoding, helper,
                settings, tasks)
 
-# 👇 ADD THIS HERE (IMPORTANT)
 from config import DOWNLOAD_DIR, ENCODE_DIR
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
@@ -24,13 +23,10 @@ by the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-You should have received a copy of the GNU Affero General Public License
-along with this program. If not, see .'''
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
 
-
-@Client.on_message(filters.command('so' 'ur' 'ce'))
+@Client.on_message(filters.command(['source']))
 async def g_s(_, message):
     try:
         await message.reply(text=sauce, reply_markup=helper.output, disable_web_page_preview=True)
