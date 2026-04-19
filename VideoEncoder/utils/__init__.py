@@ -8,7 +8,7 @@ from .. import LOGGER
 from . import (direct_link_generator, display_progress, encoding, helper,
                settings, tasks)
 
-from config import DOWNLOAD_DIR, ENCODE_DIR
+from ..config import DOWNLOAD_DIR, ENCODE_DIR
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 os.makedirs(ENCODE_DIR, exist_ok=True)
